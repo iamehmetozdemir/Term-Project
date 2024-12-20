@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Prediction Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <h2>Word Prediction Game</h2>
+    <div class="game-info">
+        <h4>Score: <span id="score-value">0</span></h4>
+        <div id="lives">
+            <img src="./Photos/Heart.svg.png" id="life-1" class="life">
+            <img src="./Photos/Heart.svg.png" id="life-2" class="life">
+            <img src="./Photos/Heart.svg.png" id="life-3" class="life">
+        </div> 
+    </div>
+
+    <div class="container">
+        <input type="image"
+            src="./HARFLER/U.png"
+            alt="photo1"
+            id="card-1"
+            readonly="readonly">
+        <input type="image"
+            src="./HARFLER/N.png"
+            alt="photo2"
+            id="card-2"
+            readonly="readonly"> 
+        <input type="image"
+            src="./HARFLER/I.png"
+            alt="photo3"
+            id="card-3"
+            readonly="readonly">
+        <input type="image"
+            src="./HARFLER/T.png"
+            alt="photo4"
+            id="card-4"
+            readonly="readonly">
+        <input type="image"
+            src="./HARFLER/Y.png"
+            alt="photo5"
+            id="card-5"
+            readonly="readonly">
+
+    </div>
+
+    <div class="input-section">
+        <input type="text" id="guess" placeholder="Enter your guess">
+        <button id="submit-btn">Submit</button>
+        <button id="restart-btn" class="hidden">Reset the Game</button>
+    </div>
+  
+        
+
+    <script src="game.js"></script>
+</body>
+</html>
