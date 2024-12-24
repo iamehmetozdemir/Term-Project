@@ -67,9 +67,35 @@ function handleGuess() {
                     endGame();
                     return;
                 }
-            }} //continue with here.....................
 
-}
+                if (word.split("").every(letter => guessedLetters.includes(letter))) {
+                    message.textContent = "You won!";
+                    endGame();
+                }
+            } else {
+                message.textContent = "Letter already guessed.";
+            }
+        } else {
+            lives -= 1;
+            updateLives();
+            if (lives === 0) {
+                message.textContent = "You lost! Reset the game to try again";
+                endGame();
+            }
+        }
+    } else if (guess.length === word.length) {
+        if (guess === word) {
+            score = 100;
+            updateScore();
+            message.textContent = "You won!";
+            endGame();
+        }
+    } else {
+        lives = 0;
+        updateLives();
+        message.textContent = "Wrong word! You lost!";
+        endGame();
+    }
 }
 // End the game
 function endGame() {
