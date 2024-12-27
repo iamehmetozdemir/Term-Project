@@ -1,3 +1,3 @@
 function goToGame(){
-    window.location.href = '../Game%20Page/game.html';
+    window.location.href = '../gamePage/game.html';
 };
