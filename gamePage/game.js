@@ -115,7 +115,6 @@ function handleGuess() {
     if (guess === word) {
       score = 100;
       updateScore();
-      alert("You won! Please press 'Reset the Game' to play again.");
       alert("Congratulations! You guessed the word! Please press 'Reset the Game' to play again.");
       
       for (let i = 0; i < word.length; i++) {
