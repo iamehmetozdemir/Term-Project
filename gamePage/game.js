@@ -100,7 +100,7 @@ function handleGuess() {
         message.textContent = "Letter already guessed.";
       }
     } else {
-
+      message.textContent = "Wrong letter!";
       lives -= 1;
       updateLives();
 
