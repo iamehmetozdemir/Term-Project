@@ -78,6 +78,8 @@ function handleGuess() {
   if (!guess) {
     message.textContent = "Please enter a guess.";
     return;
+  }else{
+    message.textContent = "";
   }
 
   
@@ -96,11 +98,8 @@ function handleGuess() {
           endGame();
           return;
         }
-      } else {
-        message.textContent = "Letter already guessed.";
       }
     } else {
-      message.textContent = "Wrong letter!";
       lives -= 1;
       updateLives();
 
