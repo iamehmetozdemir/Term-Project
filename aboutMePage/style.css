@@ -54,7 +54,7 @@ hr {
 }
 
 #gameButton {
-    background-color: #4CAF50; 
+    background-color: #a51d1d; 
     border: none;
     color: white;
     padding: 15px 30px;
@@ -65,10 +65,6 @@ hr {
     margin: 20px auto;
     cursor: pointer;
     border-radius: 12px;
-}
-
-#gameButton {
-    background-color: #45a049;
 }
 
   

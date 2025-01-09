@@ -99,7 +99,18 @@ body {
     border: 5px rgb(224, 37, 37)   solid;
     visibility: hidden;
 }
-
+#restart-btn {
+    background-color: #1f1bf9;
+    border: none;
+    color: white;
+    padding: 15px 70px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+}
 .hidden {
     display: none;
 }
