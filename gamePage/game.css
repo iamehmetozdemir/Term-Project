@@ -82,7 +82,7 @@ body {
     margin-bottom: 10px; 
 }
 .cardBorder {
-    margin-top: 20px;
+    margin-top: 5px;
     margin-inline-start: 15px;
     background-color: purple;
     display: flex;
@@ -100,7 +100,7 @@ body {
     visibility: hidden;
 }
 #restart-btn {
-    background-color: #1f1bf9;
+    background-color: #20a66c;
     border: none;
     color: white;
     padding:15px 30px;
